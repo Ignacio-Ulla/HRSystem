@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <View
+      id="View2">
+      <property
+         name="activityId">DeptEmpPage</property>
+      <property
+         name="x">375.02344</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>DeptEmpPage&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="y">331.79883</property>
+      <property
+         name="page">/DeptEmpPage.jsf</property>
+      <property
+         name="exceptionHandler">false</property>
+   </View>
+   <View
+      id="View3">
+      <property
+         name="activityId">query</property>
+      <property
+         name="x">559.0</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>query&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="y">334.1953</property>
+      <property
+         name="page">/query.jsf</property>
+      <property
+         name="exceptionHandler">false</property>
+   </View>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase4"
+      from="View2"
+      to="View3">
+      <property
+         name="fromOutcome">goQuery</property>
+      <property
+         name="sdm:polyPoints">R50,416.02344,331.44824,518.0,333.84473,L50</property>
+   </ControlFlowCase>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase5"
+      from="View3"
+      to="View2">
+      <property
+         name="fromOutcome">back</property>
+      <property
+         name="sdm:polyPoints">L54,517.9177,337.34473,416.02344,334.94824,R54</property>
+   </ControlFlowCase>
+</SDM>
